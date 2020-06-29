@@ -1,62 +1,66 @@
-import React from 'react';
+import React, { useState, FormEvent } from 'react';
 import { FiChevronRight } from 'react-icons/fi';
 import { Title, Form, Repositories } from './styles';
 
 import logoImg from '../../assets/logo.svg';
+import api from '../../services/api';
+
+interface Repository {
+  full_name: string;
+  description: string;
+  owner: {
+    login: string;
+    avatar_url: string;
+  };
+}
 
 const Dashboard: React.FC = () => {
+  const [newRepo, setNewRepo] = useState('');
+  const [repositories, setRepositories] = useState<Repository[]>([]);
+
+  async function handleAddRepository(
+    event: FormEvent<HTMLFormElement>,
+  ): Promise<void> {
+    event.preventDefault();
+
+    const response = await api.get<Repository>(`repos/${newRepo}`);
+
+    const repository = response.data;
+
+    setRepositories([...repositories, repository]);
+    setNewRepo('');
+  }
+
   return (
     <>
       <img src={logoImg} alt="Github Explorer" />
       <Title>Explore Repositórios no Github</Title>
 
-      <Form action="/">
-        <input placeholder="Digite o nome do repossitório" />
-        <button type="button">Pesquisar</button>
+      <Form onSubmit={handleAddRepository}>
+        <input
+          value={newRepo}
+          onChange={e => setNewRepo(e.target.value)}
+          placeholder="Digite o nome do repossitório"
+        />
+        <button type="submit">Pesquisar</button>
       </Form>
 
       <Repositories>
-        <a href="/">
-          <img
-            src="https://avatars0.githubusercontent.com/u/51201126?s=400&u=62e4abe922d28596d36b0cd2479f257041af11eb&v=4"
-            alt="Lucas dos Prazeres"
-          />
+        {repositories.map(repository => (
+          <a key={repository.full_name} href="teste">
+            <img
+              src={repository.owner.avatar_url}
+              alt={repository.owner.login}
+            />
 
-          <div>
-            <strong>lucascprazeres/goBarber-server</strong>
-            <p>Primeiro projeto desenvolvido no bootcamp goStack 12</p>
-          </div>
+            <div>
+              <strong>{repository.full_name}</strong>
+              <p>{repository.description}</p>
+            </div>
 
-          <FiChevronRight size={20} />
-        </a>
-
-        <a href="/">
-          <img
-            src="https://avatars0.githubusercontent.com/u/51201126?s=400&u=62e4abe922d28596d36b0cd2479f257041af11eb&v=4"
-            alt="Lucas dos Prazeres"
-          />
-
-          <div>
-            <strong>lucascprazeres/goBarber-server</strong>
-            <p>Primeiro projeto desenvolvido no bootcamp goStack 12</p>
-          </div>
-
-          <FiChevronRight size={20} />
-        </a>
-
-        <a href="/">
-          <img
-            src="https://avatars0.githubusercontent.com/u/51201126?s=400&u=62e4abe922d28596d36b0cd2479f257041af11eb&v=4"
-            alt="Lucas dos Prazeres"
-          />
-
-          <div>
-            <strong>lucascprazeres/goBarber-server</strong>
-            <p>Primeiro projeto desenvolvido no bootcamp goStack 12</p>
-          </div>
-
-          <FiChevronRight size={20} />
-        </a>
+            <FiChevronRight size={20} />
+          </a>
+        ))}
       </Repositories>
     </>
   );
