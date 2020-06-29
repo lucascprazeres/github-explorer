@@ -12,16 +12,15 @@ const Dashboard: React.FC = () => {
 
       <Form action="/">
         <input placeholder="Digite o nome do repossitório" />
-        <button>
-          Pesquisar
-        </button>
+        <button type="button">Pesquisar</button>
       </Form>
 
       <Repositories>
         <a href="/">
           <img
             src="https://avatars0.githubusercontent.com/u/51201126?s=400&u=62e4abe922d28596d36b0cd2479f257041af11eb&v=4"
-            alt="Lucas dos Prazeres" />
+            alt="Lucas dos Prazeres"
+          />
 
           <div>
             <strong>lucascprazeres/goBarber-server</strong>
@@ -34,7 +33,8 @@ const Dashboard: React.FC = () => {
         <a href="/">
           <img
             src="https://avatars0.githubusercontent.com/u/51201126?s=400&u=62e4abe922d28596d36b0cd2479f257041af11eb&v=4"
-            alt="Lucas dos Prazeres" />
+            alt="Lucas dos Prazeres"
+          />
 
           <div>
             <strong>lucascprazeres/goBarber-server</strong>
@@ -47,7 +47,8 @@ const Dashboard: React.FC = () => {
         <a href="/">
           <img
             src="https://avatars0.githubusercontent.com/u/51201126?s=400&u=62e4abe922d28596d36b0cd2479f257041af11eb&v=4"
-            alt="Lucas dos Prazeres" />
+            alt="Lucas dos Prazeres"
+          />
 
           <div>
             <strong>lucascprazeres/goBarber-server</strong>
@@ -59,6 +60,6 @@ const Dashboard: React.FC = () => {
       </Repositories>
     </>
   );
-}
+};
 
 export default Dashboard;
