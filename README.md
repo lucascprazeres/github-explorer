@@ -18,7 +18,7 @@
 <h2>Sobre 😎</h2>
 
 <p>
-  Essa aplicação web foi desenvolvida durante a terceira semana do bootcamp goStack 12, da Rocketseat. Ela serve como uma ferramenta de busca de repositórios do Github, usando a api fornecida pelo mesmo.
+  Essa aplicação web foi desenvolvida durante a terceira semana do bootcamp goStack 12, da <a href="https://rocketseat.com.br/">Rocketseat</a>. Ela serve como uma ferramenta de busca de repositórios do Github, usando a api fornecida pelo mesmo.
 </p>
 
 <h2>Tecnologias Utlizadas 🚀</h2>
@@ -85,5 +85,5 @@
 <hr>
 
 <p align=center>
-  Made with 💜 by Lucas dos Prazeres
+  Made with 💜 by <a href="https://www.linkedin.com/in/lucas-prazeres/">Lucas dos Prazeres</a>
 </p>
