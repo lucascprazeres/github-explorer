@@ -1,44 +1,89 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  Github Explorer :octocat:🚀
 
-## Available Scripts
+  <p align=center>
+  <img src="https://img.shields.io/badge/api-github-%233a3a3a" />
 
-In the project directory, you can run:
+  <img src="https://img.shields.io/badge/frontend-reactjs-%232be0ed" />
 
-### `yarn start`
+  <img src="https://img.shields.io/badge/style-styled--components-ff69b4" />
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <img src="https://img.shields.io/badge/from-rocketseat-blueviolet" />
+  </P>
+</h1>
+<p align=center>
+  <img src=".github/app.gif" style="width: 540px;">
+</p>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<h2>Sobre 😎</h2>
 
-### `yarn test`
+<p>
+  Essa aplicação web foi desenvolvida durante a terceira semana do bootcamp goStack 12, da Rocketseat. Ela serve como uma ferramenta de busca de repositórios do Github, usando a api fornecida pelo mesmo.
+</p>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h2>Tecnologias Utlizadas 🚀</h2>
+<ul>
+  <li>
+    <a href="https://api.github.com">api</a>
+  </li>
+  <li>
+    <a href="https://www.typescriptlang.org/">TypeScript</a>
+  </li>
+  <li>
+    <a href="https://reactjs.org/">ReactJS</a>
+  </li>
+  <li>
+    <a href="https://github.com/axios/axios">axios</a>
+  </li>
+  <li>
+    <a href="https://styled-components.com/">Styled-Components</a>
+  </li>
+</ul>
 
-### `yarn build`
+<h2>Execultando o projeto 🔥</h2>
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p>
+  para rodar o projeto em sua própria máquina, basta executar os seguintes comandos, em seu terminal com git:
+</p>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```bash
+  # faça um clone do repositório
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  git clone <link-do-repositorio>
 
-### `yarn eject`
+  # navegue até a pasta e carregue as dependências
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  cd github-explorer && yarn
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  # execute o app!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  yarn start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<h2>Como contribuir? 😍</h2>
 
-## Learn More
+<p>
+  Uma das formas de contribuir é dando uma ⭐ nesse repositório, para que mais devs possam vê-lo!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  Se você quiser contribuir com uma mudança no projeto, basta:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  ```bash
+  # fazer um fork do repositório, mais acima
+
+  # criar a sua branch
+
+  git checkout -b <nome-da-branch>
+
+  # fazer as suas alterações (...)
+
+  # em seguida, realizar um commit das mudanças e executar:
+
+  git push origin <sua-branch>
+  ```
+</p>
+
+<hr>
+
+<p align=center>
+  Made with 💜 by Lucas dos Prazeres
+</p>
