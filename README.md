@@ -40,7 +40,7 @@
   </li>
 </ul>
 
-<h2>Execultando o projeto 🔥</h2>
+<h2>Executando o projeto 🔥</h2>
 
 <p>
   para rodar o projeto em sua própria máquina, basta executar os seguintes comandos, em seu terminal com git:
