@@ -1,5 +1,5 @@
 <h1 align="center">
-  Github Explorer :octocat:🚀
+  <img src=".github/logo.svg" />
 
   <p align=center>
   <img src="https://img.shields.io/badge/api-github-%233a3a3a" />
