@@ -82,6 +82,10 @@
   ```
 </p>
 
+
+<h2>📝 Licença</h2>
+Esse projeto se encontra sob a licença <strong>MIT</strong>. Para mais informações, acesse o arquivo <strong>LICENSE</strong>.
+
 <hr>
 
 <p align=center>
